@@ -1,0 +1,21 @@
+{
+  "name": "2024_25_design_patterns_2",
+  "version": "0.0.0",
+  "description": "OO Design",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ULL-ESIT-PAI-2024-2025/2024-2025-pai-design-patterns-2-2024-2025-pai-design-patterns-2.git"
+  },
+  "license": "ISC",
+  "keywords": [
+    "PAI",
+    "Design Patterns",
+    "Factory",
+    "Strategy"
+  ],
+  "author": "",
+  "devDependencies": {
+    "eslint": "^9.22.0",
+    "ts-node": "^10.9.2"
+  }
+}

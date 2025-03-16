@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "allowJs": true,
+    "rootDir": "./",
+    "outDir": "./dist",
+    "declaration": true,
+    "alwaysStrict": true,  
+    "strict": true, 
+    "noImplicitAny": true,
+    "noFallthroughCasesInSwitch": true, 
+    "noImplicitReturns": true,  
+    "noUnusedLocals": true,
+    "forceConsistentCasingInFileNames": true  
+  },
+  "exclude": [
+        "node_modules",
+        "build",
+        "lib",
+        "test",
+        "public"
+  ]
+}
