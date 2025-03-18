@@ -18,7 +18,7 @@ import { Block } from '../products/block/block'
 import { Tube } from '../products/tube/tube';
 
 /**
- * Factory that creates Goombas
+ * Factory that creates Nintendo 3D's themed products
  */
 export class NintendoDsFactory implements Factory {
   /**
