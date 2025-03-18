@@ -10,10 +10,10 @@
  *
  */
 
-import { EnemyFactory } from "./EnemyFactory";
-import { Enemy } from "../enemies/enemy";
-import { Lakitu } from "../enemies/lakitu";
-import { Koopa } from "../enemies/koopa";
+import { EnemyFactory } from './enemy-factory';
+import { Enemy } from '../enemies/enemy';
+import { Lakitu } from '../enemies/lakitu';
+import { Koopa } from '../enemies/koopa';
 
 /**
  * Implementation of EnemyFactory that creates 

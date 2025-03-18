@@ -10,7 +10,7 @@
  *
  */
 
-import { Enemy } from "./enemy";
+import { Enemy } from './enemy';
 
 export class Goomba implements Enemy {
   public move(): void {

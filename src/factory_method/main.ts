@@ -6,12 +6,12 @@
  *
  * @author Sonia Frías Jiménez
  * @since Mar 15 2025
- * @desc Main program to test decorators on enemies.
+ * @desc Main program to test Factory Method
  */
 
-import { RandomEnemyFactory } from "./factory/RandomEnemyFactory";
-import { DificultEnemyFactory } from "./factory/DificultEnemyFactory";
-import { GoombaEnemyFactory } from "./factory/goombaFactory";
+import { RandomEnemyFactory } from './factory/random-enemy-factory';
+import { DificultEnemyFactory } from './factory/dificult-enemy-factory';
+import { GoombaEnemyFactory } from './factory/goomba-factory';
 
 
 function main() {

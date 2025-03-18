@@ -10,7 +10,7 @@
  *
  */
 
-import { Enemy } from "../enemies/enemy";
+import { Enemy } from '../enemies/enemy';
 
 /**
  * Factory for creating Enemies

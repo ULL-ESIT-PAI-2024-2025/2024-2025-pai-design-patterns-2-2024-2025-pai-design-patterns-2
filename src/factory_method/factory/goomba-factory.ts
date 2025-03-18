@@ -11,9 +11,9 @@
  *
  */
 
-import { EnemyFactory } from "./EnemyFactory";
-import { Enemy } from "../enemies/enemy";
-import { Goomba } from "../enemies/goomba";
+import { EnemyFactory } from './EnemyFactory';
+import { Enemy } from '../enemies/enemy';
+import { Goomba } from '../enemies/goomba';
 
 /**
  * Factory that creates Goombas

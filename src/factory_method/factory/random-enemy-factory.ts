@@ -11,11 +11,11 @@
  *
  */
 
-import { EnemyFactory } from "./EnemyFactory";
-import { Enemy } from "../enemies/enemy";
-import { Goomba } from "../enemies/goomba";
-import { Boo } from "../enemies/boo";
-import { Koopa } from "../enemies/koopa";
+import { EnemyFactory } from './EnemyFactory';
+import { Enemy } from '../enemies/enemy';
+import { Goomba } from '../enemies/goomba';
+import { Boo } from '../enemies/boo';
+import { Koopa } from '../enemies/koopa';
 
 /**
  * Factory that creates Enemies Randomly

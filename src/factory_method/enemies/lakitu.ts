@@ -11,7 +11,7 @@
  *
  */
 
-import { Enemy } from "./enemy";
+import { Enemy } from './enemy';
 
 export class Lakitu implements Enemy {
   public move(): void {
