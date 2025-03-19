@@ -10,7 +10,7 @@
  */
 
 export class Grass {
-  constructor(private name: string, private id: number, private hardness: number) {
+  public constructor(private name: string, private id: number, private hardness: number) {
     this.name = name;
     this.id = id;
     this.hardness = hardness;
@@ -48,6 +48,7 @@ export class Grass {
   public interact(): void {
     console.log(`Placing ${this.name}`);
     console.log(`Breaking ${this.name}`);
-    console.log(`Expand the grass to the next block`);
+    console.log(`Drop grass block`);
+    console.log(`Expand the grass to the next dirt block`);
   }
 }
