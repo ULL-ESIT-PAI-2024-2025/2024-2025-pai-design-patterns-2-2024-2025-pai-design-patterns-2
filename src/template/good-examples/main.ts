@@ -22,8 +22,14 @@ function main() {
   const grass: Block = new Grass
 
   bedrock.interact();
+  const bedrockDrops = bedrock.getDrops();
+  console.log(bedrockDrops.length + '\n');
+
   dirt.interact();
+  console.log(dirt.getDrops()[0].getName() + '\n');
+
   grass.interact();
+  console.log(grass.getDrops()[0].getName() + '\n');
 }
 
 main();

@@ -15,5 +15,20 @@ export class Grass extends Block {
   public constructor() {
     super('Grass', 3, 0.1);
   }
+  
+  /**
+    * Break the grass
+    * @returns void
+    */
+  protected break(): void {
+    console.log('Breaking grass');
+  }
 
+  /**
+   * Drop the grass
+   * @returns Block[] - A empty Array 
+   */
+  public getDrops(): Block[] {
+    return [this];
+  }
 }

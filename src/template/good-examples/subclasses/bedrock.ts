@@ -11,7 +11,7 @@
 
 import { Block } from '../block';
 
-class Bedrock extends Block {
+export class Bedrock extends Block {
   public constructor() {
     super('Bedrock', 0, 1);
   }
