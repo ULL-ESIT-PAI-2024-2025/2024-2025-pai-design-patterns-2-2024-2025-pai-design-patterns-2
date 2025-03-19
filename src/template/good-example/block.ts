@@ -9,8 +9,12 @@
  * @desc Template class to the blocks classes 
  */
 
-abstract class Block {
-  public constructor(private name: string, private texture: string, private hardness: number) {}
+export abstract class Block {
+  public constructor(private name: string, private id: number, private hardness: number) {}
+ 
+  // ----------------
+  // Template methods
+  // ----------------
   
   /**
     * Get the name of the block
@@ -19,13 +23,13 @@ abstract class Block {
   public getName(): string {
     return this.name;
   }
-
+  
   /**
-    * Get the texture of the block
-    * @returns string - The texture of the
+    * Get the id of the block
+    * @returns number - The id of the block
     */
-  public getTexture(): string {
-    return this.texture;
+  public getId(): number {
+    return this.id;
   }
 
   /**
@@ -46,7 +50,7 @@ abstract class Block {
     this.break();
     this.specialEffect();
   }
-  
+
   /**
     * Place the block
     * @returns void
@@ -54,6 +58,11 @@ abstract class Block {
   protected place(): void {
     console.log(`Placing ${this.name}`);
   }
+  
+
+  // ------------
+  // Hook methods
+  // ------------
   
   /**
     * Break the block
@@ -70,9 +79,13 @@ abstract class Block {
   protected specialEffect(): void {
     console.log(`${this.name} has not special effect`);
   }
- 
+
+  // ----------------
+  // Abstract methods
+  // ----------------
+
   /**
-    * get the block when it drops
+    * Get the block when it drops
     * @returns Block[] - Array of blocks that drops 
     */
   public abstract getDrops(): Block[];
