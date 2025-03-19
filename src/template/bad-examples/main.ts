@@ -21,8 +21,13 @@ function main() {
   const grass: Grass = new Grass
 
   bedrock.interact();
+  console.log();
+
   dirt.interact();
+  console.log();
+
   grass.interact();
+  console.log();
 }
 
 main();

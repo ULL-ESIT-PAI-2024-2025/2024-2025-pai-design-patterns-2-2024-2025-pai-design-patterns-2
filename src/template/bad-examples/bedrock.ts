@@ -9,7 +9,7 @@
  * @desc Class Bedrock to represent the bedrock block 
  */
 
-class Bedrock {
+export class Bedrock {
   private readonly name;
   private readonly id: number; 
   private readonly hardness: number;
@@ -27,7 +27,7 @@ class Bedrock {
    * Get the name of the block
    * @returns string - The name of the block
    */
-  getName(): string {
+  public getName(): string {
     return this.name;
   }
 
@@ -35,7 +35,7 @@ class Bedrock {
    * Get the id of the block
    * @returns number - The id of the block
    */
-  getId(): number {
+  public getId(): number {
     return this.id;
   }
 
@@ -43,7 +43,7 @@ class Bedrock {
    * Get the hardness of the block
    * @returns number - The hardness of the block
    */
-  getHardness(): number {
+  public getHardness(): number {
     return this.hardness;
   }
 
@@ -55,7 +55,7 @@ class Bedrock {
   public interact(): void {
     console.log(`Placing ${this.name}`);
     console.log(`${this.name} cannot be broken`);
-    console.log(`No block dop`);
+    console.log(`No block drop`);
     console.log(`Non special effect`);
   }
 }

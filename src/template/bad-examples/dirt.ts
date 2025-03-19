@@ -27,7 +27,7 @@ export class Dirt {
    * Get the name of the block
    * @returns string - The name of the block
    */
-  getName(): string {
+  public getName(): string {
     return this.name;
   }
 
@@ -35,7 +35,7 @@ export class Dirt {
    * Get the id of the block
    * @returns number - The id of the block
    */
-  getId(): number {
+  public getId(): number {
     return this.id;
   }
 
@@ -43,7 +43,7 @@ export class Dirt {
    * Get the hardness of the block
    * @returns number - The hardness of the block
    */
-  getHardness(): number {
+  public getHardness(): number {
     return this.hardness;
   }
 
