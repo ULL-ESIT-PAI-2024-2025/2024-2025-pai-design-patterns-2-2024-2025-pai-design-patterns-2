@@ -9,21 +9,18 @@
  * @brief Main file for the bad example of the strategy pattern
  */
 
-import { Enemy } from './enemies';
+import { PowerUp } from './powerups';
 
 function main(): void {
-  const goomba = new Enemy('Goomba');
-  const koopa = new Enemy('Koopa');
-  const boo = new Enemy('Boo');
+  const mushroom = new PowerUp('Mushroom');
+  const fireFlower = new PowerUp('Fire Flower');
+  const star = new PowerUp('Star');
+  const oneUp = new PowerUp('1-Up');
 
-  goomba.move();
-  goomba.attack();
-
-  koopa.move();
-  koopa.attack();
-
-  boo.move();
-  boo.attack();
+  mushroom.performAction();
+  fireFlower.performAction();
+  star.performAction();
+  oneUp.performAction();
 }
 
 main();
