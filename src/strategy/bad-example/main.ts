@@ -14,13 +14,9 @@ import { PowerUp } from './powerups';
 function main(): void {
   const mushroom = new PowerUp('Mushroom');
   const fireFlower = new PowerUp('Fire Flower');
-  const star = new PowerUp('Star');
-  const oneUp = new PowerUp('1-Up');
 
   mushroom.performAction();
   fireFlower.performAction();
-  star.performAction();
-  oneUp.performAction();
 }
 
 main();
