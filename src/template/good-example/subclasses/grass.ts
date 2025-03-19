@@ -11,4 +11,9 @@
 
 import { Block } from '../block';
 
+export class Grass extends Block {
+  public constructor() {
+    super('Grass', 3, 0.1);
+  }
 
+}

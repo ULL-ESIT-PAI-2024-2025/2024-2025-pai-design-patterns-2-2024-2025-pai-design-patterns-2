@@ -6,14 +6,21 @@
  *
  * @author Abian Santana Ledesma 
  * @since Mar 19 2025
- * @desc class grass to the blocks classes 
+ * @desc class grass to the blocks classes
  */
 
 export class Grass {
-  public constructor(private name: string, private id: number, private hardness: number) {
-    this.name = name;
-    this.id = id;
-    this.hardness = hardness;
+  private readonly name;
+  private readonly id: number; 
+  private readonly hardness: number;
+
+  /**
+   * Constructor of the class
+   */
+  public constructor() {
+    this.name = 'Grass';
+    this.id = 2;
+    this.hardness = 0.1; 
   }
 
   /**

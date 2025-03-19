@@ -10,10 +10,17 @@
  */
 
 export class Dirt {
-  public constructor(private name: string, private id: number, private hardness: number) {
-    this.name = name;
-    this.id = id;
-    this.hardness = hardness;
+  private readonly name;
+  private readonly id: number; 
+  private readonly hardness: number;
+
+  /**
+   * Constructor of the class
+   */
+  public constructor() {
+    this.name = 'Dirt';
+    this.id = 1;
+    this.hardness = 0.1; 
   }
 
   /**
