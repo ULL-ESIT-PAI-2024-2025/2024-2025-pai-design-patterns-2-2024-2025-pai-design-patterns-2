@@ -16,6 +16,10 @@ export class Grass extends Block {
     super('Grass', 3, 0.1);
   }
 
+  /**
+   * Special effect of the grass
+   * @returns void
+   */
   protected specialEffect(): void {
     console.log('The grass expands to the next dirt block');
   }
