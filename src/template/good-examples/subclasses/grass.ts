@@ -16,6 +16,10 @@ export class Grass extends Block {
     super('Grass', 3, 0.1);
   }
 
+  protected specialEffect(): void {
+    console.log('The grass expands to the next dirt block');
+  }
+
   /**
    * Drop the grass
    * @returns Block[] - A empty Array 
