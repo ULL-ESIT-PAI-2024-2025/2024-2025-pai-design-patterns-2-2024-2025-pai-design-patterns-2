@@ -13,8 +13,20 @@ import { Pickaxe } from './tools/pickaxe';
 import { Sword } from './tools/sword';
 
 function main() {
-  const pickaxe: Pickaxe = new Pickaxe('Diamond', 1561);
-  const sword: Sword = new Sword('Iron', 250);
+  const pickaxe: Pickaxe = new Pickaxe();
+  pickaxe.setMaterial('Diamond');
+  pickaxe.setDurability(1561);
+
+  // AVOID THIS
+  // ----------------------------
+  // const pickaxeClone: Pickaxe = new Pickaxe('Wood', 59);
+  // pickaxeClone.setMaterial('Diamond');
+  // pickaxeClone.setDurability(1561);
+  // ----------------------------
+
+  const sword: Sword = new Sword();
+  sword.setMaterial('Iron');
+  sword.setDurability(250);
 
   const pickaxeClone: Pickaxe = pickaxe.clone();
   pickaxeClone.setMaterial('Netherite');

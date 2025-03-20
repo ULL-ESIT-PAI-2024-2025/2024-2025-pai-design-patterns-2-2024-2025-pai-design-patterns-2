@@ -12,14 +12,23 @@
 import { Tool } from './tool';
 
 export class Sword implements Tool {
-  constructor(private material: string, private durability: number) {}
+  private material: string;
+  private durability: number;
+
+  constructor() {
+    this.material = 'Wood';
+    this.durability = 59;
+  }
 
   /**
    * clone method that returns a new Sword with the same material and durability
    * @returns Sword
    */
   public clone(): this {
-    return new Sword(this.material, this.durability) as this;
+    const clone = Object.create(Object.getPrototypeOf(this));
+    clone.setMaterial(this.material);
+    clone.setDurability(this.durability);
+    return clone as this;
   }
 
   /**
@@ -27,6 +36,14 @@ export class Sword implements Tool {
    */
   public displayInfo(): void {
     console.log(`Sword: ${this.material}, Durability: ${this.durability}`);
+  }
+
+  /**
+   * setMaterial method that sets the material of the Sword
+   * @returns void
+   */
+  public setMaterial(material: string): void {
+    this.material = material;
   }
 
   /**

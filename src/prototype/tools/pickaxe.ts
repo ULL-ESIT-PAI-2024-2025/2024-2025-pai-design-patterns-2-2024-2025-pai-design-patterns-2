@@ -12,14 +12,23 @@
 import { Tool } from './tool';
 
 export class Pickaxe implements Tool {
-  constructor(private material: string, private durability: number) {}
+  private material: string;
+  private durability: number;
+  
+  constructor() {
+    this.material = 'Wood';
+    this.durability = 59;
+  }
   
   /**
    * clone method that returns a new Pickaxe with the same material and durability
    * @returns Pickaxe
    */
   public clone(): this {
-    return new Pickaxe(this.material, this.durability) as this;
+    const clone = Object.create(Object.getPrototypeOf(this));
+    clone.setMaterial(this.material);
+    clone.setDurability(this.durability);
+    return clone as this;
   }
 
   /**
@@ -35,5 +44,14 @@ export class Pickaxe implements Tool {
    */
   public setMaterial(material: string): void {
     this.material = material;
+  }
+
+
+  /**
+   * setDurability method that sets the durability of the Pickaxe 
+   * @returns void 
+   */
+  public setDurability(durability: number): void {
+    this.durability = durability;
   }
 }
