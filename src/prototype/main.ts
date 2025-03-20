@@ -9,18 +9,17 @@
  * @desc Main function to test the cloning classes
  */
 
-import { Pickaxe } from './pickaxe';
-import { Sword } from './sword';
-import { Tool } from './tool';
+import { Pickaxe } from './tools/pickaxe';
+import { Sword } from './tools/sword';
 
 function main() {
-  const pickaxe: Tool = new Pickaxe('Diamond', 1561);
-  const sword: Tool = new Sword('Iron', 250);
+  const pickaxe: Pickaxe = new Pickaxe('Diamond', 1561);
+  const sword: Sword = new Sword('Iron', 250);
 
-  const pickaxeClone: Tool = pickaxe.clone();
+  const pickaxeClone: Pickaxe = pickaxe.clone();
   pickaxeClone.setMaterial('Netherite');
 
-  const swordClone: Tool = sword.clone();
+  const swordClone: Sword = sword.clone();
 
   pickaxe.displayInfo();
   pickaxeClone.displayInfo();

@@ -18,8 +18,8 @@ export class Sword implements Tool {
    * clone method that returns a new Sword with the same material and durability
    * @returns Sword
    */
-  public clone(): Tool {
-    return new Sword(this.material, this.durability);
+  public clone(): this {
+    return new Sword(this.material, this.durability) as this;
   }
 
   /**

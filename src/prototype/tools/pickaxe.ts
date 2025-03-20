@@ -18,8 +18,8 @@ export class Pickaxe implements Tool {
    * clone method that returns a new Pickaxe with the same material and durability
    * @returns Pickaxe
    */
-  public clone(): Tool {
-    return new Pickaxe(this.material, this.durability);
+  public clone(): this {
+    return new Pickaxe(this.material, this.durability) as this;
   }
 
   /**

@@ -9,8 +9,7 @@
  * @desc Interface Tool to the displayInfo method 
  */
 
-import { Cloneable } from '../cloneable';
-
+import { Cloneable } from '../clonable';
 
 export interface Tool extends Cloneable {
   displayInfo(): void;
