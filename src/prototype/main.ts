@@ -19,16 +19,20 @@ function main() {
 
   // AVOID THIS
   // ----------------------------
-  // const pickaxeClone: Pickaxe = new Pickaxe('Wood', 59);
+  // const pickaxeClone: Pickaxe = new Pickaxe();
   // pickaxeClone.setMaterial('Diamond');
-  // pickaxeClone.setDurability(1561);
+  // pickaxeClone.setDurability(1550);
+  // pickaxe.displayInfo();
+  // pickaxeClone.displayInfo();
   // ----------------------------
 
   // ALERT: THIS IS NOT A CLONE
   // ----------------------------
   // const pickaxeClone: Pickaxe = pickaxe;
-  // pickaxeClone.setMaterial('Diamond');
+  // pickaxeClone.setMaterial('Iron');
   // pickaxeClone.setDurability(1561);
+  // pickaxe.displayInfo();
+  // pickaxeClone.displayInfo();
   // ----------------------------
   // That code will change the material and durability of both pickaxe and pickaxeClone
 
@@ -38,7 +42,6 @@ function main() {
 
   const pickaxeClone: Pickaxe = pickaxe.clone();
   pickaxeClone.setMaterial('Netherite');
-
   const swordClone: Sword = sword.clone();
   swordClone.setDurability(200);
 
