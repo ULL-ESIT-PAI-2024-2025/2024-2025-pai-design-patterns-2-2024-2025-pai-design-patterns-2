@@ -10,7 +10,7 @@
  */
 
 export class Enemy {
-  defeat(): void {
+  public defeat(): void {
     console.log('Enemy defeated!');
   }
 }
