@@ -17,14 +17,6 @@ export class Dirt extends Block {
   }
 
   /**
-    * Break the dirt 
-    * @returns void
-    */
-  protected break(): void { 
-    console.log('Breaking dirt');
-  }
-
-  /**
    * Drop the dirt
    * @returns Block[] - A empty Array 
    */  
