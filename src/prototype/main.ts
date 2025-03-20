@@ -24,6 +24,14 @@ function main() {
   // pickaxeClone.setDurability(1561);
   // ----------------------------
 
+  // ALERT: THIS IS NOT A CLONE
+  // ----------------------------
+  // const pickaxeClone: Pickaxe = pickaxe;
+  // pickaxeClone.setMaterial('Diamond');
+  // pickaxeClone.setDurability(1561);
+  // ----------------------------
+  // That code will change the material and durability of both pickaxe and pickaxeClone
+
   const sword: Sword = new Sword();
   sword.setMaterial('Iron');
   sword.setDurability(250);
