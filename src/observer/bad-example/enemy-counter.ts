@@ -12,7 +12,7 @@
 export class EnemyCounter {
   private enemyCount: number = 0;
 
-  increase(): void {
+  public increase(): void {
     this.enemyCount++;
     console.log(`Enemy count: ${this.enemyCount}`);
   }
