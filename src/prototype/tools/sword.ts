@@ -30,10 +30,10 @@ export class Sword implements Tool {
   }
 
   /**
-   * setMaterial method that sets the material of the Sword 
-   * @returns void 
+   * setDurability method that sets the durability of the Sword
+   * @returns void
    */
-  public setMaterial(material: string): void {
-    this.material = material;
+  public setDurability(durability: number): void {
+    this.durability = durability;
   }
 }

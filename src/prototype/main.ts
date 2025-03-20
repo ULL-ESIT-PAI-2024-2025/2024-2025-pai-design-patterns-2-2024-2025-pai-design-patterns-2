@@ -20,9 +20,12 @@ function main() {
   pickaxeClone.setMaterial('Netherite');
 
   const swordClone: Sword = sword.clone();
+  swordClone.setDurability(200);
 
   pickaxe.displayInfo();
   pickaxeClone.displayInfo();
   sword.displayInfo();
   swordClone.displayInfo();
 }
+
+main();
