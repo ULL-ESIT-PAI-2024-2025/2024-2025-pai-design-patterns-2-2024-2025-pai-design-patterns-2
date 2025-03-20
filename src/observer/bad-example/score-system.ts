@@ -12,7 +12,7 @@
 export class ScoreSystem {
   private score: number = 0;
 
-  increase(): void {
+  public increase(): void {
     this.score += 100;
     console.log(`Score: ${this.score}`);
   }
