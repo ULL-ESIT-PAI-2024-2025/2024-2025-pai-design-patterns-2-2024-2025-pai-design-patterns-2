@@ -4,10 +4,12 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas 2024-2025
  *
- * @author Sonia Frías Jiménez
+ * @author Sonia Frías Jiménez, Martín José Marrero Quintans, Abian Santana Ledesma
  * @since Mar 15 2025
- * @desc Defines the interface of a factory
+ * @desc Defines the interface of an abstract factory
  *
+ * An abstract factory can have as much `factory methods`
+ * as products can create
  */
 
 import { Block } from '../products/block/block'

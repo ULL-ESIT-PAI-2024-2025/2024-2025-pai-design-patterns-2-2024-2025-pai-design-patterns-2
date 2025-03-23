@@ -4,7 +4,7 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas 2024-2025
  *
- * @author Sonia Frías Jiménez
+ * @author Sonia Frías Jiménez, Martín José Marrero Quintans, Abian Santana Ledesma
  * @since Mar 15 2025
  * @desc Koopa is a concrete implementation of Enemy interface
  * 

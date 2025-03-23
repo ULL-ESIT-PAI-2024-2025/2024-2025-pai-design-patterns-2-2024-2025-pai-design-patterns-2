@@ -4,9 +4,15 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas 2024-2025
  *
- * @author Sonia Frías Jiménez
+ * @author Sonia Frías Jiménez, Martín José Marrero Quintans, Abian Santana Ledesma
  * @since Mar 18 2025
- * @desc Main program to test decorators on enemies.
+ * @desc Main program to test Abstract Factory
+ * 
+ * Creates objects using their respective factory 
+ * instead of intantiating them directly with the 
+ * `new` operator
+ * 
+ * 
  */
 
 import { Factory } from './factories/factory';

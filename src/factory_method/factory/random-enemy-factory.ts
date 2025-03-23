@@ -4,14 +4,14 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas 2024-2025
  *
- * @author Sonia Frías Jiménez
+ * @author Sonia Frías Jiménez, Martín José Marrero Quintans, Abian Santana Ledesma 
  * @since Mar 15 2025
  * @desc example of an implementation of Factory Interface
  * which creates a random object
  *
  */
 
-import { EnemyFactory } from './EnemyFactory';
+import { EnemyFactory } from './enemy-factory';
 import { Enemy } from '../enemies/enemy';
 import { Goomba } from '../enemies/goomba';
 import { Boo } from '../enemies/boo';
