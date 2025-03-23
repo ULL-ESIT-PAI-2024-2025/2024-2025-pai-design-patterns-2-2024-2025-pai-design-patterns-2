@@ -14,10 +14,18 @@ import { PowerUpStrategy } from './powerup-strategy';
 export class PowerUp implements PowerUpStrategy {
   private powerUpStrategy: PowerUpStrategy;
 
+  /**
+   * @brief Constructor for the PowerUp class
+   * @param powerUpStrategy Strategy to be used
+   */
   constructor(powerUpStrategy: PowerUpStrategy) {
     this.powerUpStrategy = powerUpStrategy;
   }
 
+  /**
+   * @brief Performs the action of the power up
+   * @returns void
+   */
   performAction(): void {
     this.powerUpStrategy.performAction();
   }

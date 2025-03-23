@@ -12,6 +12,11 @@
 import { PowerUpStrategy } from './powerup-strategy';
 
 export class FireFlower implements PowerUpStrategy {
+  
+  /**
+   * @brief Performs the action of the FireFlower power-up
+   * @returns void
+   */
   performAction(): void {
     console.log('Mario shoots a fireball!');
   }

@@ -11,13 +11,18 @@
 
 import { Observer } from './observer';
 
-export class EnemyCounter implements Observer {
-  private enemyCount: number = 0;
+export class DefeatedEnemyCounter implements Observer {
+  private defeatedEnemyCount: number = 0;
 
+  /**
+   * Updates the enemy count
+   * @param message The message to update the enemy count
+   * @returns void
+   */
   update(message: string): void {
     if (message === 'Enemy defeated!') {
-      this.enemyCount++;
-      console.log(`Enemy count: ${this.enemyCount}`);
+      this.defeatedEnemyCount++;
+      console.log(`Enemy count: ${this.defeatedEnemyCount}`);
     }
   }
 }

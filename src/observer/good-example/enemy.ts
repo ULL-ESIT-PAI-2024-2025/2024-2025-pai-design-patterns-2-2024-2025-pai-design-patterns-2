@@ -14,10 +14,20 @@ import { Observer } from './observer';
 export class Enemy {
   private observers: Observer[] = [];
 
+  /**
+   * Adds an observer to the list of observers
+   * @param observer The observer to add
+   * @returns void
+   */
   addObserver(observer: Observer): void {
     this.observers.push(observer);
   }
 
+  /**
+   * Removes an observer from the list of observers
+   * @param observer The observer to remove
+   * @returns void
+   */
   removeObserver(observer: Observer): void {
     const observerIndex = this.observers.indexOf(observer);
     if (observerIndex !== -1) {
@@ -25,12 +35,21 @@ export class Enemy {
     }
   }
 
+  /**
+   * Notifies all observers
+   * @param message The message to notify
+   * @returns void
+   */
   notify(message: string): void {
     this.observers.forEach((observer) => {
       observer.update(message);
     });
   }
 
+  /**
+   * @desc Defeats the enemy
+   * @returns void
+   */
   defeat(): void {
     this.notify('Enemy defeated!');
   }

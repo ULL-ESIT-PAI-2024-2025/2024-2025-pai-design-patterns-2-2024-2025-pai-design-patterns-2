@@ -9,22 +9,22 @@
  * @desc Main file for the bad example of the Observer pattern
  */
 
-import { EnemyCounter } from './enemy-counter';
+import { DefeatedEnemyCounter } from './enemy-counter';
 import { Enemy } from './enemy';
 import { ScoreSystem } from './score-system';
 
 function main() {
-  const enemyCounter: EnemyCounter = new EnemyCounter();
+  const defeatedEnemyCounter: DefeatedEnemyCounter = new DefeatedEnemyCounter();
   const scoreSystem: ScoreSystem = new ScoreSystem();
   const enemy: Enemy = new Enemy();
 
   enemy.defeat();
   scoreSystem.increase();
-  enemyCounter.increase();
+  defeatedEnemyCounter.increase();
 
   enemy.defeat();
   scoreSystem.increase();
-  enemyCounter.increase();
+  defeatedEnemyCounter.increase();
 }
 
 if (require.main === module) {

@@ -9,6 +9,9 @@
  * @brief File that contains the definition of the PowerUpStrategy interface
  */
 
+/**
+ * Interface for the PowerUpStrategy pattern
+ */
 export interface PowerUpStrategy {
   performAction(): void;
 }

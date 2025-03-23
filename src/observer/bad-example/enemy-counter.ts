@@ -9,11 +9,15 @@
  * @desc Definition file for the EnemyCounter class
  */
 
-export class EnemyCounter {
-  private enemyCount: number = 0;
+export class DefeatedEnemyCounter {
+  private defeatedEnemyCount: number = 0;
 
+  /**
+   * Increases the enemy count by one
+   * @returns void
+   */
   public increase(): void {
-    this.enemyCount++;
-    console.log(`Enemy count: ${this.enemyCount}`);
+    this.defeatedEnemyCount++;
+    console.log(`Enemy count: ${this.defeatedEnemyCount}`);
   }
 }

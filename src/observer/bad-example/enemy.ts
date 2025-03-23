@@ -10,6 +10,11 @@
  */
 
 export class Enemy {
+
+  /**
+   * @desc Defeats the enemy
+   * @returns void
+   */
   public defeat(): void {
     console.log('Enemy defeated!');
   }

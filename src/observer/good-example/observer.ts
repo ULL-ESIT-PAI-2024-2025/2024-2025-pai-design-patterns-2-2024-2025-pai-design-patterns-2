@@ -9,6 +9,9 @@
  * @desc Definition file for the Observer interface
  */
 
+/**
+ * Interface for the Observer pattern
+ */
 export interface Observer {
   update(message: string): void;
 }

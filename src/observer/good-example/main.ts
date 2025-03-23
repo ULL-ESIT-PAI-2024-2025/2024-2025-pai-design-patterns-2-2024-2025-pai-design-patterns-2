@@ -11,17 +11,16 @@
 
 import { Enemy } from './enemy';
 import { ScoreSystem } from './score-system';
-import { EnemyCounter } from './enemy-counter';
+import { DefeatedEnemyCounter } from './enemy-counter';
 
 function main() {
   const enemy = new Enemy();
   const scoreSystem = new ScoreSystem();
-  const enemyCounter = new EnemyCounter();
+  const defeatedEnemyCounter = new DefeatedEnemyCounter();
 
   enemy.addObserver(scoreSystem);
-  enemy.addObserver(enemyCounter);
+  enemy.addObserver(defeatedEnemyCounter);
 
-  enemy.defeat();
   enemy.defeat();
   enemy.defeat();
 }

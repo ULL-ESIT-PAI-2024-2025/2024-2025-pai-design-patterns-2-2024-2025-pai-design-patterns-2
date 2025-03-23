@@ -12,6 +12,11 @@
 import { PowerUpStrategy } from './powerup-strategy';
 
 export class Mushroom implements PowerUpStrategy {
+
+  /**
+   * @brief Performs the action of the Mushroom power-up
+   * @returns void
+   */
   performAction(): void {
     console.log('Mario grows in size!');
   }

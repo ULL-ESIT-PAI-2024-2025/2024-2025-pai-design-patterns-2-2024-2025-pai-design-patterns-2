@@ -14,6 +14,11 @@ import { Observer } from './observer';
 export class ScoreSystem implements Observer {
   private score: number = 0;
 
+  /**
+   * Updates the score
+   * @param message The message to update the score
+   * @returns void
+   */
   update(message: string): void {
     if (message === 'Enemy defeated!') {
       this.score += 100;
