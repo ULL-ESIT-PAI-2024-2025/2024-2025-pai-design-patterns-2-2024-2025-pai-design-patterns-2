@@ -12,7 +12,6 @@
  * instead of intantiating them directly with the 
  * `new` operator
  * 
- * 
  */
 
 import { Factory } from './factories/factory';

@@ -7,7 +7,7 @@
  * @author Sonia Frías Jiménez, Martín José Marrero Quintans, Abian Santana Ledesma 
  * @since Mar 15 2025
  * @desc example of an implementation of Factory Interface
- * which creates a random object
+ * which creates a random enemy
  *
  */
 

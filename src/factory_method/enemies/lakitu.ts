@@ -8,7 +8,6 @@
  * @since Mar 15 2025
  * @desc Lakitu is a concrete implementation of Enemy interface
  * 
- *
  */
 
 import { Enemy } from './enemy';
