@@ -25,7 +25,7 @@ export class Sword implements Tool {
    * @returns Sword
    */
   public clone(): this {
-    const clone = Object.create(Object.getPrototypeOf(this));
+    const clone = Object.create(this);
     clone.setMaterial(this.material);
     clone.setDurability(this.durability);
     return clone as this;

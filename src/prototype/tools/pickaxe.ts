@@ -27,7 +27,7 @@ export class Pickaxe implements Tool {
   public clone(): this {
     // Object.create creates a new object with the prototype of the object passed as argument
     // see the README.md for more information
-    const clone = Object.create(Object.getPrototypeOf(this));
+    const clone = Object.create(this);
     clone.setMaterial(this.material);
     clone.setDurability(this.durability);
     return clone as this;
