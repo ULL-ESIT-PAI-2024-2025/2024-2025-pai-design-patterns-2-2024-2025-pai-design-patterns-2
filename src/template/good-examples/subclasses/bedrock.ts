@@ -29,7 +29,7 @@ export class Bedrock extends Block {
    * @returns Block[] - A empty Array 
    */
   public getDrops(): Block[] {
-    // DANGER: This don't violate the Liskov Substitution Principle
+    // DANGER: This violate the Liskov Substitution Principle
     // throw new Error('You cannot break bedrock');
     return [];
   }
