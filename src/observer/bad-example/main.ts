@@ -4,7 +4,7 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas 2024-2025
  *
- * @author Martín José Marrero Quintans
+ * @author Martín José Marrero Quintans, Abian Santana Ledesma, Sonia Sonia Frías Jiménez
  * @since March 18th 2025
  * @desc Main file for the bad example of the Observer pattern
  */

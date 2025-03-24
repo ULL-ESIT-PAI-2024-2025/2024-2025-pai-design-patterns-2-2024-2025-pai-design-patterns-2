@@ -4,7 +4,7 @@
  * Grado en Ingeniería Informática
  * Programación de Aplicaciones Interactivas 2024-2025
  *
- * @author Abian Santana Ledesma 
+ * @author Martín José Marrero Quintans, Abian Santana Ledesma, Sonia Sonia Frías Jiménez
  * @since Mar 19 2025
  * @desc Interface Tool to the displayInfo method 
  */
